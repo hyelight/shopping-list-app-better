@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --title-font-family: Mouse Memoirs;
+  --content-font-family: Quicksand;
+}
+body {
+  background-color: rgb(196, 200, 242);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.list {
+  width: 380px;
+  background-color: rgb(245, 226, 242);
+  border-radius: 20px;
+  box-shadow: 6px 6px 3px darkslateblue;
+}
+.list .header {
+  height: 50px;
+  padding: 10px;
+  font-size: 30px;
+  font-family: var(--title-font-family);
+  background: linear-gradient(90deg, #9886f1, #e765a2);
+  font-weight: bold;
+  color: whitesmoke;
+  border-radius: 20px 20px 0 0;
+}
+.list .items {
+  height: 380px;
+  overflow-y: auto;
+}
+.list .items .items_row .item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  font-size: 20px;
+}
+.list .items .items_row .item .item_name {
+  font-family: var(--content-font-family);
+}
+.item .delete_btn .fa-trash-can {
+  font-size: 15px;
+  transition: all 0.3s;
+}
+.item .delete_btn .fa-trash-can:hover {
+  transform: scale(1.2);
+  color: darkblue;
+}
+
+.list .items .items_row .item_divider {
+  width: 90%;
+  height: 2px;
+  background-color: #9886f1;
+  opacity: 0.5;
+  margin: auto;
+}
+.list .footer {
+  background: linear-gradient(90deg, #9886f1, #e765a2);
+  border-radius: 0 0 20px 20px;
+}
+.list .footer .footer_name {
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 35px;
+  font-size: 20px;
+  padding: 0 10px;
+}
+.list .footer .footer_btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: black;
+  color: #9886f1;
+  font-size: 23px;
+  transition: all 0.3s;
+}
+.list .footer .footer_btn:hover {
+  color: blanchedalmond;
+  transform: rotate(45deg);
+}
